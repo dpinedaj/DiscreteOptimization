@@ -1,0 +1,56 @@
+Steps:
+
+    -Parameters definitions
+    -Decision variable declarations
+    -Constraints
+    -Objectives
+    -Output
+
+
+Kind of variables:
+    -Parameters:
+        .variables in a standard programming language. must be assigned a value (but only once)
+        .Are declared with a type int, float, or bool (or a range/set)
+        .Can par as a prefix
+        .Equivalents:
+            int: i=3;
+            par int: 1=3;
+            int: i; i=3;   
+
+    -Decision Variables
+        .Like variables in mathematics
+        .Declared with var and type (or a range/set)
+        .Can also be assigned once with a fix value expr
+    
+    -Range:
+        written 1..u
+            -Is a contiguous sequence of integers from 1 to u
+        Equivalents:
+            var int: i; constraint i >= 0; constraint i <= 4;
+            var 0..4: i;
+            var {0,1,2,3,4}: i;
+
+        Equivalents:
+            var int: i = x + 3;
+            var int: i; consotraint i = x + 3;
+
+    -Constraints:
+        are built using the standard arithmetic relational operators
+            ( = != < > >= <=)
+        
+        .wrriten in the form:
+            constraint <Constraint-expression>
+
+    -Output:
+        .wrriten in the form:
+            output <list of strings>;
+    
+    Plus:
+        Strings are enclosed in " "
+
+        backslash for special characters \n \t etc.
+
+        Built in functions
+            show(v)
+            \(v) --> to show variable into string
+            "house"++"boat" --> to concatenate

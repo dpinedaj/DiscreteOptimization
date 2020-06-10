@@ -1,0 +1,44 @@
+An array can be multidimensional
+
+    array[index_set1, index_set2,..., index_setn] of type: var-name;
+
+The index set of an array needs to be:
+    An integer range or enumerated type
+    fixed set expression whose value is a range
+
+1D array is defined using a list:
+    capacity = [4000, 6, 60, 2000, 50];
+
+2D array is defined:
+    start with [|
+    ends with |]
+
+    | for separate each row:
+
+    consumption = [| 1.5, 1.0, 1.0, 1.0
+                   | 1.0, 0.0, 1.0, 1.5
+                   | 1.5, 1.0, 1.0, 1.0
+                   | 1.0, 0.0, 1.0, 1.5
+                   | 1.0, 0.0, 1.0, 1.5 |]
+
+for arrays <= 6 dimensions can be used:
+    consumption = array2d(1..5, 1..4)
+
+can use array comprehension:
+    .[expr | generator1, generator2,...]
+
+    i.e. [i + j | i, j in 1..4 where i < j]
+    = [3, 4, 5, 5, 6, 7]
+
+
+##Iteration:
+    List of numbers: sum, product, min, max,
+    List of constraints: forall, exists
+
+Special syntax for call:
+    forall(i,j in 1..10 where i <j)
+            (a[i] != a[j])
+
+    is equivalent to:
+    forall([a[i] != a[j]
+            | i,j in 1..10 where i < j ])

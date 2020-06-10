@@ -1,0 +1,19 @@
+#Coloring a map.
+
+
+    Defined the constraints, a colour must me different to the next one.
+
+    Define a enum: with the options of choice.
+        -enum COLOR = {GREEN, BLUE, PINK, YELLOW};
+        each variable can pick a choice such:
+            -var COLOR :Si;
+            -var COLOR :Yan;
+
+        
+    Enums:
+        .Define a finite set of named objects.
+        .Declared:
+            enum <enum-name> = {id1, ..., idn}
+
+        .variable-declare:
+            var <enum-name> : <var-name>

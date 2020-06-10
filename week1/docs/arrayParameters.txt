@@ -1,0 +1,6 @@
+Arrays of parameters and variables
+    array[range] of <variable declaration>
+
+Generator expressions:
+    forall(i in range)(bool-expression)
+    sum(i in range)(expression)

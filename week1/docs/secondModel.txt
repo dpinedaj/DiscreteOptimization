@@ -1,0 +1,9 @@
+Definition of Satisfaction Problems:
+    Dont need to seek an optimal solution.
+
+
+Constraints do not need to be just linear
+equialities and inequialities:
+    -Modulo, multiplication, division
+    .disequality (!=)
+    .a lot of more complex constraints

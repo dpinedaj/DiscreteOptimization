@@ -1,0 +1,17 @@
+Usually data files define values for parameters:
+
+Can be enumerated types too.
+    enum: COLOR; (in color.mzn)
+    COLOR = {R,W,B,G,P};(color.dzn)
+
+Datafiles only contain assignment items:
+    usually parameters but is also possible for decision variables
+
+Any parameters not assigned in model must be assigned in file
+
+A model is a formal description of a class of our optimization problems.
+
+
+To make a model into a instance:
+    Just add DATA
+    
